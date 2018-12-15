@@ -7,5 +7,6 @@
 
 
 .grid__row {
-    @include flexible($direction: row);
+    @include flexible($direction: column);
+
 }
