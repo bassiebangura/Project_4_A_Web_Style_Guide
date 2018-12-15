@@ -1,10 +1,36 @@
-//Mixin to setup flexible box layout for flex containers
+//******** Flexbox Mixin ********//
+//@include flexible(flex, column, wrap) {}
 @mixin flexible(
     $display: flex,
     $direction: null,
-    $wrap: null) {
+    $wrap: null)
+    //null prevents unwanted css output
+    {
         display: $display;
         flex-direction: $direction;
         flex-wrap: $wrap;
-    }
+    };
 
+//******** Media Query Mixin ********//
+// @include mq(sm) {}
+@mixin mq($breakpoint) {
+
+    // If the breakpoint exists in the map.
+    @if map-has-key($breakpoints, $breakpoint) {
+  
+      // Get the breakpoint value.
+      $breakpoint-value: map-get($breakpoints, $breakpoint);
+  
+      // Write the media query.
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    
+    // If the breakpoint doesn't exist in the map.
+    } @else {
+  
+      // Log a warning.
+      @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+  }
+  
