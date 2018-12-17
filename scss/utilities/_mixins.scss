@@ -1,17 +1,19 @@
-//******** Flexbox Mixin ********//
+//******** Flexbox Mixin ********
 //@include flexible(flex, column, wrap) {}
 @mixin flexible(
     $display: flex,
     $direction: null,
-    $wrap: null)
+    $wrap: null,
+    $justify-content: null)
     //null prevents unwanted css output
     {
         display: $display;
         flex-direction: $direction;
         flex-wrap: $wrap;
+        justify-content: $justify-content;
     };
 
-//******** Media Query Mixin ********//
+//******** Media Query Mixin ********
 // @include mq(sm) {}
 @mixin mq($breakpoint) {
 
@@ -22,8 +24,10 @@
       $breakpoint-value: map-get($breakpoints, $breakpoint);
   
       // Write the media query.
-      @media (min-width: $breakpoint-value) {
-        @content;
+      @if $breakpoint-value == 769px {
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
       }
     
     // If the breakpoint doesn't exist in the map.
@@ -34,3 +38,7 @@
     }
   }
   
+//********** Centering Mixin ********
+@mixin centerer {
+    margin: auto;
+}
