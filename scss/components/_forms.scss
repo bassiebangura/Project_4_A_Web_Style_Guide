@@ -7,3 +7,22 @@
 
 //********* Input Elements ********
 
+.form__input {
+    background: rgba(255,255,255,0.8);
+    border-width: 0;
+    border-bottom: 3px solid green;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: white;
+    color: #8a97a0;   
+}
+
+
+input::placeholder {
+    text-align: left; 
+}
+
+
