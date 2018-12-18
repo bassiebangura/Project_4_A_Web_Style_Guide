@@ -7,11 +7,19 @@
 @for $i from 1 through 12 {
     .grid__col--#{$i} {
         width: 100%;
+        @include flexible($direction: column,
+                       $justify-content: center,
+                       $align-items: center);
+
     }
 }
 
 .grid__row {
     @include flexible($direction: column,
                        $justify-content: center);
+}
+
+.centered {
+    @include centerer;
 }
 

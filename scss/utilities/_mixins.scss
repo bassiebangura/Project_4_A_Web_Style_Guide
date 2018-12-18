@@ -4,13 +4,15 @@
     $display: flex,
     $direction: null,
     $wrap: null,
-    $justify-content: null)
+    $justify-content: flex-start,
+    $align-items: flex-start)
     //null prevents unwanted css output
     {
         display: $display;
         flex-direction: $direction;
         flex-wrap: $wrap;
         justify-content: $justify-content;
+        align-items: $align-items;
     };
 
 //******** Media Query Mixin ********
@@ -41,4 +43,13 @@
 //********** Centering Mixin ********
 @mixin centerer {
     margin: auto;
+    text-align: center;
+}
+
+//******** Blockquote Mixin ********
+@mixin blockquotation {
+    border-left: 4px solid green;
+    padding: 0.4em;
+    border-radius: 0.2em;
+    @content
 }
