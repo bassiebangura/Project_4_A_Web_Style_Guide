@@ -467,4 +467,12 @@ ul {
 .nav, .nav__iem {
   width: 100%;
 }
+
+.grid__col--12 button {
+  width: 100%;
+}
+
+.form__label--hidden {
+  display: none;
+}
 /*# sourceMappingURL=styles.css.map */
