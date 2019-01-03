@@ -7,16 +7,43 @@
 @for $i from 1 through 12 {
     .grid__col--#{$i} {
         width: 100%;
+        padding: 0.8em;
+        margin-top: 0.15em;
+        margin-bottom: 0.15em;
         @include flexible($direction: column,
                        $justify-content: center,
                        $align-items: center);
 
+    }
+
+    .grid__col--#{$i}.theme__colors {
+           //the following if else clauses sets the bg color of the grid elements
+           @if ($i == 3) {
+            background-color: $grid-col-3;
+        } @else if ($i == 4) {
+            background-color: $grid-col-4;
+        } @else if ($i == 5) {
+            background-color: $grid-col-5;
+        } @else if ($i == 6) {
+            background-color: $grid-col-6;
+        } @else if ($i == 7) {
+            background-color: $grid-col-7;
+        } @else if ($i == 8) {
+            background-color: $grid-col-8;
+        } @else if ($i == 12) {
+            background-color: $grid-col-12
+        }
+        @include flexible($direction: column,
+                       $justify-content: center,
+                       $align-items: start);
+       
     }
 }
 
 .grid__row {
     @include flexible($direction: column,
                        $justify-content: center);
+    padding: 1.5em;
 }
 
 .centered {

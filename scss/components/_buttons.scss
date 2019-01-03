@@ -1,7 +1,29 @@
 //******** buttons ********
 
-//Sets button width to 100%
-.grid__col--12 button, .btn--default {
+//Sets button width to 100% modify selector and 
+//get rid of descendant selection
+.grid__col--12 button {
     width: 100%;
+}
+
+//make an extend or mixin that you can use for all buttons
+.btn--default {
+    @include button($background-color: $default, $width: 100%)
+}
+
+.btn--success {
+    @include button($background-color: $success, $width: 100%)
+}
+
+.btn--error {
+    @include button($background-color: $error, $width: 100%)
+}
+
+.btn--warning {
+    @include button($background-color: $warning, $width: 100%)
+}
+
+.btn--info {
+    @include button($background-color: $info, $width: 100%)
 }
 

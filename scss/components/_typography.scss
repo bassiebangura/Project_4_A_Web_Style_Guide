@@ -1,3 +1,11 @@
 .blockquote {
    @include blockquotation
 }
+
+.headline--primary {
+   color: $headline-primary;
+}
+
+.link {
+   color: $link-color;
+}
