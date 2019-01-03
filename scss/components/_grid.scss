@@ -7,7 +7,7 @@
 @for $i from 1 through 12 {
     .grid__col--#{$i} {
         width: 100%;
-        padding: 0.8em;
+        padding: 0.5em;
         margin-top: 0.15em;
         margin-bottom: 0.15em;
         @include flexible($direction: column,
@@ -36,7 +36,7 @@
         @include flexible($direction: column,
                        $justify-content: center,
                        $align-items: start);
-       
+       border-radius: 0.4em;
     }
 }
 

@@ -62,9 +62,9 @@
         background-color: $background-color;
         border: none;
         border-radius: 0.25em;
-        padding: 0.95em;
+        padding: 0.75em;
         margin-top: 0.8em;
-        margin-bottom: 0.8em;
+        color: white;
         @content;
     }
 

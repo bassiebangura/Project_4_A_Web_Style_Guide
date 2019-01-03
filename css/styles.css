@@ -20,6 +20,14 @@ body {
   margin: 0;
 }
 
+div, li, p {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
 /* HTML5 display definitions
      ========================================================================== */
 /**
@@ -399,9 +407,25 @@ ul {
   padding: 0;
 }
 
+body {
+  width: 100%;
+  font-family: Arial, sans-serif, "sans serif";
+  color: #888;
+  font-size: 1.1em;
+}
+
+p {
+  line-height: 2em;
+}
+
+blockquote {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
 .grid__col--1 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -433,11 +457,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--2 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -469,11 +494,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--3 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -506,11 +532,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--4 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -543,11 +570,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--5 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -580,11 +608,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--6 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -617,11 +646,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--7 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -654,11 +684,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--8 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -691,11 +722,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--9 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -727,11 +759,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--10 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -763,11 +796,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--11 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -799,11 +833,12 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__col--12 {
   width: 100%;
-  padding: 0.8em;
+  padding: 0.5em;
   margin-top: 0.15em;
   margin-bottom: 0.15em;
   display: -webkit-box;
@@ -836,6 +871,7 @@ ul {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  border-radius: 0.4em;
 }
 
 .grid__row {
@@ -870,8 +906,16 @@ ul {
   color: #58E1C1;
 }
 
+.headline--secondary {
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #aaa;
+  padding-left: 1.2em;
+  margin: 0.2em 0.2em;
+}
+
 .link {
-  color: #428bca;
+  color: #51DDFC;
 }
 
 .nav {
@@ -884,6 +928,10 @@ ul {
   padding: 0.85em;
 }
 
+.nav .nav__item a {
+  color: #888;
+}
+
 nav[role="navigation"] {
   width: 100%;
 }
@@ -893,13 +941,17 @@ nav[role="navigation"] {
   border-radius: 4px;
 }
 
+.nav__item:hover a {
+  color: white;
+}
+
 a:link {
   text-decoration: none;
 }
 
 .img--frame {
-  padding: 0.5em;
-  border: 2px solid #aaa;
+  padding: 0.75em;
+  border: 1px solid #ddd;
 }
 
 .grid__col--12 button {
@@ -912,9 +964,9 @@ a:link {
   background-color: #51DDFC;
   border: none;
   border-radius: 0.25em;
-  padding: 0.95em;
+  padding: 0.75em;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  color: white;
 }
 
 .btn--success {
@@ -923,9 +975,9 @@ a:link {
   background-color: #63CC82;
   border: none;
   border-radius: 0.25em;
-  padding: 0.95em;
+  padding: 0.75em;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  color: white;
 }
 
 .btn--error {
@@ -934,9 +986,9 @@ a:link {
   background-color: #E4757A;
   border: none;
   border-radius: 0.25em;
-  padding: 0.95em;
+  padding: 0.75em;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  color: white;
 }
 
 .btn--warning {
@@ -945,9 +997,9 @@ a:link {
   background-color: #FD7856;
   border: none;
   border-radius: 0.25em;
-  padding: 0.95em;
+  padding: 0.75em;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  color: white;
 }
 
 .btn--info {
@@ -956,9 +1008,9 @@ a:link {
   background-color: #927BC1;
   border: none;
   border-radius: 0.25em;
-  padding: 0.95em;
+  padding: 0.75em;
   margin-top: 0.8em;
-  margin-bottom: 0.8em;
+  color: white;
 }
 
 .form__label--hidden {
@@ -968,7 +1020,7 @@ a:link {
 .form__input {
   background: rgba(255, 255, 255, 0.8);
   border-width: 0;
-  border-bottom: 3px solid #58E1C1;
+  border-bottom: 3.5px solid #58E1C1;
   height: auto;
   margin: 0;
   outline: 0;
@@ -976,6 +1028,15 @@ a:link {
   width: 100%;
   background-color: white;
   color: #8a97a0;
+}
+
+.form {
+  margin: auto;
+  text-align: center;
+}
+
+.form .headline--secondary {
+  text-align: left;
 }
 
 input::-webkit-input-placeholder {

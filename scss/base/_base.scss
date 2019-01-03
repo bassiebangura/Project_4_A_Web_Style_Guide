@@ -7,6 +7,24 @@ ul {
     padding: 0;
 }
 
+body {
+    width: 100%;
+    font-family: $main-font, 'sans serif';
+    color: $body-color;
+    font-size: 1.1em;
+}
+
+p {
+    line-height: 2em;
+}
+
+blockquote {
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+
+
 
 
 
