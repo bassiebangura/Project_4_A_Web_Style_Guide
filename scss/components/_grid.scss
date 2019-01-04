@@ -44,6 +44,13 @@
     @include flexible($direction: column,
                        $justify-content: center);
     padding: 1.5em;
+
+    @include mq($breakpoint: $sm) {
+        @for $i from 1 through 12 {
+            .grid__col--#{$i} {
+            width: ($i / 12) * 100%;
+            }
+        }
 }
 
 .centered {
