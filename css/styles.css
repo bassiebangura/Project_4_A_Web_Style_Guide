@@ -403,7 +403,6 @@ th {
 }
 
 * {
-  border: 2px solid red;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -417,7 +416,8 @@ ul {
 }
 
 body {
-  width: 100%;
+  width: 95%;
+  margin: auto;
   font-family: Arial, sans-serif, "sans serif";
   color: #888;
   font-size: 1.1em;
@@ -456,6 +456,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -483,6 +484,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -511,6 +513,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -539,6 +542,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -567,6 +571,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -595,6 +600,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -623,6 +629,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -651,6 +658,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -678,6 +686,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -705,6 +714,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -732,6 +742,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 
@@ -760,6 +771,7 @@ blockquote {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-left: 0.5em;
   border-radius: 0.4em;
 }
 

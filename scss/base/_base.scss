@@ -1,6 +1,6 @@
 
 * {
-    border: 2px solid red;//for debug purposes
+    //border: 2px solid red;//for debug purposes
 
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -16,7 +16,8 @@ ul {
 
 
 body {
-    width: 100%;
+    width: 95%;
+    margin: auto;
     font-family: $main-font, 'sans serif';
     color: $body-color;
     font-size: 1.1em;
