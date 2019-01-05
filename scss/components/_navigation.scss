@@ -1,9 +1,14 @@
 //******* Navigation ********
 //****  Mobile View ****// 
 .nav {
+    @include flexible($direction: column, $align-items: center);
+}
+.nav {
     width: 100%;
-    @include flexible($direction: row,
-                       $justify-content: flex-end);
+    @include mq($sm){
+        @include flexible($direction: row,
+                        $justify-content: flex-end);
+    }
     .nav__item {
         width: 100%;
         text-align: center;
@@ -22,9 +27,9 @@
     
 }
 
-/*nav[role="navigation"] {
+nav[role="navigation"] {
     width: 100%;
-}*/
+}
 
 .nav__item:hover {
     background-color: $nav-item-bg;
