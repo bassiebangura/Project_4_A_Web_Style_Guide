@@ -78,7 +78,7 @@
      } @else if ($i == 12) {
          background-color: $grid-col-12
      }
-     @include flexible($align-items: start);
+     align-items: flex-start;
     border-radius: 0.4em;
  }
 }
