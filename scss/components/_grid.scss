@@ -1,57 +1,34 @@
-//Setting width for 12 column grid system
-//@for $i from 1 through 12 {
-//    .grid__col--#{$i} {
-//        width: ($i / 12) * 100%;
-//    }
-//}
+//Setting mobile view width 12 column grid system
 @for $i from 1 through 12 {
     .grid__col--#{$i} {
         width: 100%;
-        padding: 0.5em;
-        margin-top: 0.15em;
-        margin-bottom: 0.15em;
-        @include flexible($direction: column,
-                       $justify-content: center,
-                       $align-items: center);
-
-    }
-
-    .grid__col--#{$i}.theme__colors {
-           //the following if else clauses sets the bg color of the grid elements
-           @if ($i == 3) {
-            background-color: $grid-col-3;
-        } @else if ($i == 4) {
-            background-color: $grid-col-4;
-        } @else if ($i == 5) {
-            background-color: $grid-col-5;
-        } @else if ($i == 6) {
-            background-color: $grid-col-6;
-        } @else if ($i == 7) {
-            background-color: $grid-col-7;
-        } @else if ($i == 8) {
-            background-color: $grid-col-8;
-        } @else if ($i == 12) {
-            background-color: $grid-col-12
-        }
-        @include flexible($direction: column,
-                       $justify-content: center,
-                       $align-items: start);
-       border-radius: 0.4em;
-    }
+   }
 }
 
 .grid__row {
     @include flexible($direction: column,
                        $justify-content: center);
-    padding: 1.5em;
-
-    @include mq($breakpoint: $sm) {
-        @for $i from 1 through 12 {
-            .grid__col--#{$i} {
-            width: ($i / 12) * 100%;
-            }
+    @include mq($sm) {
+            @include flexible($direction: row,
+                               $justify-content: center);
+            
         }
 }
+@include mq($sm) {
+    @for $i from 1 through 12 {
+        .grid__col--#{$i} {
+            width: calc(#{$i} / 12 * 100% + 2* (#{$i} * #{$gap}) );
+            margin: $gap;
+            padding: $gap;
+            //code below makes individual grid containers flex containers
+            @include flexible($direction: row,
+                        $justify-content: center);
+        }
+        @include add-theme-color($i);    
+    }
+}
+
+
 
 .centered {
     @include centerer;
