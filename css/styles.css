@@ -420,15 +420,15 @@ ul {
   margin: auto;
   font-family: Arial, sans-serif, "sans serif";
   color: #888;
-  font-size: 1.1em;
+  font-size: 1em;
 }
 
-p {
+.card {
   line-height: 2em;
 }
 
 .blockquote {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
 }
 

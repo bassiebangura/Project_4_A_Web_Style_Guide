@@ -1,4 +1,5 @@
 
+//styles all element on the page
 * {
     //border: 2px solid red;//for debug purposes
 
@@ -14,21 +15,22 @@ ul {
 }
 
 
-
+//.container styles the body of the web page
 .container {
     width: 95%;
     margin: auto;
     font-family: $main-font, 'sans serif';
     color: $body-color;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
-p {
+//.card styles card-like section of web page 
+.card {
     line-height: 2em;
-}
+} 
 
 .blockquote {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-style: italic;
 }
 
