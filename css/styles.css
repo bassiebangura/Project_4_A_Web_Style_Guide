@@ -20,14 +20,6 @@ body {
   margin: 0;
 }
 
-div, li, p {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
 /* HTML5 display definitions
      ========================================================================== */
 /**
@@ -424,6 +416,10 @@ ul {
 }
 
 .card {
+  line-height: 2em;
+}
+
+p {
   line-height: 2em;
 }
 
@@ -1168,7 +1164,12 @@ a:link {
   padding: 0.75em;
   margin-top: 0.8em;
   color: white;
-  margin-right: 0.5%;
+}
+
+@media (min-width: 769px) {
+  .btn--default {
+    margin-right: 0.5%;
+  }
 }
 
 .btn--success {
@@ -1180,7 +1181,12 @@ a:link {
   padding: 0.75em;
   margin-top: 0.8em;
   color: white;
-  margin-right: 0.5%;
+}
+
+@media (min-width: 769px) {
+  .btn--success {
+    margin-right: 0.5%;
+  }
 }
 
 .btn--error {
@@ -1192,7 +1198,12 @@ a:link {
   padding: 0.75em;
   margin-top: 0.8em;
   color: white;
-  margin-right: 0.5%;
+}
+
+@media (min-width: 769px) {
+  .btn--error {
+    margin-right: 0.5%;
+  }
 }
 
 .btn--warning {
@@ -1204,7 +1215,12 @@ a:link {
   padding: 0.75em;
   margin-top: 0.8em;
   color: white;
-  margin-right: 0.5%;
+}
+
+@media (min-width: 769px) {
+  .btn--warning {
+    margin-right: 0.5%;
+  }
 }
 
 .btn--info {
@@ -1216,7 +1232,12 @@ a:link {
   padding: 0.75em;
   margin-top: 0.8em;
   color: white;
-  margin-right: 0.5%;
+}
+
+@media (min-width: 769px) {
+  .btn--info {
+    margin-right: 0.5%;
+  }
 }
 
 .form__label--hidden {

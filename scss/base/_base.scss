@@ -19,8 +19,8 @@ ul {
 .container {
     width: 95%;
     margin: auto;
-    font-family: $main-font, 'sans serif';
-    color: $body-color;
+    font-family: $container-font, 'sans serif';
+    color: $container-color;
     font-size: 1em;
 }
 
@@ -29,6 +29,9 @@ ul {
     line-height: 2em;
 } 
 
+p {
+    line-height: 2em;
+}
 .blockquote {
     font-size: 1.3em;
     font-style: italic;

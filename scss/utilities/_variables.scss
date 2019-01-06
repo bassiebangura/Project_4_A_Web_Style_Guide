@@ -21,18 +21,19 @@ $block-quote-border: #58E1C1;
 $headline-primary: #58E1C1;
 $link-color:#51DDFC;;
 $headline-secondary: #aaa;
-$body-color:#888;
+$container-color:#888;
 
 
 
 //Font Variables
-$main-font:Arial, sans-serif;
+$container-font: Arial, sans-serif;
 
-//grid Variables
+
+//Grid Variables
 $gutter: 10px;
 $gap: $gutter / 2;
 
-//Variables for breakpoints
+//Breakpoint variables
 $xs: 576px;
 $sm: 769px;
 $md: 992px;
