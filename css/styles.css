@@ -415,7 +415,7 @@ ul {
   padding: 0;
 }
 
-body {
+.container {
   width: 95%;
   margin: auto;
   font-family: Arial, sans-serif, "sans serif";
@@ -427,7 +427,7 @@ p {
   line-height: 2em;
 }
 
-blockquote {
+.blockquote {
   font-size: 1.5em;
   font-style: italic;
 }
@@ -437,6 +437,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -465,6 +466,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,6 +495,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,6 +525,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,6 +555,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,6 +585,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -609,6 +615,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,6 +645,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,6 +675,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,6 +704,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,6 +733,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -751,6 +762,7 @@ blockquote {
   padding-top: 0.6em;
   padding-bottom: 0.6em;
   margin-bottom: 0.25em;
+  margin-top: 0.25em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,7 +1073,7 @@ blockquote {
   font-size: 1.2em;
   color: #aaa;
   padding-left: 1.2em;
-  margin: 0.2em 0.2em;
+  margin-bottom: 1.5em;
 }
 
 .link {
