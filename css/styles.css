@@ -784,7 +784,6 @@ p {
 }
 
 .grid__row {
-  padding-bottom: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,6 +797,7 @@ p {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  padding-bottom: 1.5em;
 }
 
 @media (min-width: 769px) {
@@ -1153,6 +1153,10 @@ a:link {
   width: 100%;
   padding: 0.75em;
   border: 1px solid #ddd;
+}
+
+.img--avatar {
+  border-radius: 50%;
 }
 
 .btn--default {
